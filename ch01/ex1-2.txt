@@ -1,0 +1,8 @@
+코드 1-2 서버에서 클라이언트로 전송되는 HTTP/1.1 응답 헤더
+
+HTTP/1.x 200 OK
+X-Powered-by: Servlet/2.5
+Server: Sun Java System Application Server 9.1_02
+Content-Type: text/html;charset=UTF-8
+Content-Length: 321
+Date: Wed, 06 Dec 2012 00:32:46 GMT

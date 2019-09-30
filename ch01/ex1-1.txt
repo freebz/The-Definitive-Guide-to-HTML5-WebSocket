@@ -1,0 +1,13 @@
+코드 1-1 클라이언트에서 서버로 전송되는 HTTP/1.1 요청 헤더
+
+GET /PollingStock/PollingStock HTTP/1.1
+Host: localhost:8080
+User-Agent: Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.9.1.5) Gecko/20091102 Firefox/3.5.5
+Accept: text/thml,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-us
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://localhost:8080/PollingStock/
+Cookie: showInheritedConstant=false; showInheritedProtectedConstant=false; showInheritedProperty=false; showInheritedProtectedProperty=false; showInheritedMethod=false; showInheritedProtectedMethod=false; showInheritedEvent=false; showInheritedStyle=false; showInheritedEffect=false;

@@ -1,0 +1,60 @@
+<!-- 코드 2-20 HTML5 미디어와 웹소켓을 병용한 클라이언트 측 애플리케이션의 완성 코드 -->
+
+<!DOCTYPE html>
+<title>웹소켓 이미지 드롭</title>
+<h1>이미지를 여기에 놓으세요</h1>
+<script>
+
+// 웹소켓 연결을 초기화
+var wsUrl = "ws://echo.websocket.org/echo";
+var ws = new WebSocket(wsUrl);
+ws.open = function() {
+    console.log("연결 열기 완료");
+}
+
+// 웹소켓에서 수신된 2진 이미지 데이터를 처리
+ws.onmessage = function(e) {
+    var blob = e.data;
+    console.log("메시지 도착: " + blob.size + " 바이트");
+    // URL 앞에 이름이 붙어 있으면 그 이름의 URL API를 사용함
+    if (window.webkitURL) {
+      URL = webkitURL;
+    }
+
+    var uri = URL.createObjectURL(blob);
+    var img = document.createElement("img");
+    img.src = uri;
+    document.body.appendChild(img);
+}
+
+// 드롭 이벤트를 처리
+document.ondrop = function(e) {
+    document.body.style.backgroundColor = "#fff";
+    try {
+        e.preventDefault();
+        handleFileDrop(e.dataTransfer.files[0]);
+        return false;
+    } catch(err) {
+        console.log(err);
+    }
+}
+
+// 드롭 영역에 시각적인 피드백을 제공
+document.ondragover = function(e) {
+    e.preventDefault();
+    document.body.style.backgroundColor = "#6fff41";
+}
+document.ondragleave = function(e) {
+    document.body.style.backgroundColor = "#fff";
+}
+
+// 2진 파일의 콘텐츠를 읽어서 웹소켓을 통해 송신
+function handleFileDrop(file) {
+    var reader = new FileReader();
+    reader.readAsArrayBuffer(file);
+    reader.onload = function() {
+        console.log("송신 중: " + file.name);
+        ws.send(reader.result);
+    }
+}
+</script>

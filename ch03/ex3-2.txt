@@ -1,0 +1,8 @@
+코드 3-2 서버의 HTTP 응답
+
+101 Switching Protocols
+Connection: Upgrade
+Date: Wed, 20 Jun 2012 03:39:49 GMT
+Sec-WebSocket-Accept: fYoqiH14DgI+5ylEMwM2sOLzOi0=
+Server: Kaazing Gateway
+Upgrade: WebSocket

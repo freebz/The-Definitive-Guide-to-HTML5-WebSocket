@@ -1,0 +1,8 @@
+코드 3-1 클라이언트의 HTTP 요청
+
+GET /echo HTTP/1.1
+Host: echo.websocket.org
+Origin: http://www.websocket.org
+Sec-WebSocket-Key: 7+C600xYyb0v2zmJ69RQsw==
+Sec-WebSocket-Version: 13
+Upgrade: websocket

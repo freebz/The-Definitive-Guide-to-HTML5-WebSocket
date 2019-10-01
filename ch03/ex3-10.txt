@@ -1,0 +1,14 @@
+코드 3-10 콘솔에 표시되는 결과
+
+> new connection: 5206121257506311
+new connection: 6689629901666194
+navigator.userAgent
+'(result pending)'
+>       5206121257506311:      Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:13.0)
+Gecko/20100101 Firefox/13.0.1
+    6689629901666194:      Mozilla/5.0 (X11; Linux x86_64) AppleWebkit/537.1 (KHTML,
+like Gecko) Chrome/21.0.1180.15 Safari/537.1
+5+5
+'(result pending)'
+>    6689629901666194:    10
+    5206121257506311:    10

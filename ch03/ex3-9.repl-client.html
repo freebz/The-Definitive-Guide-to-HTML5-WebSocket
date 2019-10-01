@@ -1,0 +1,18 @@
+<!-- 코드 3-9 repl-client.html -->
+
+<!doctype html>
+<title>웹소켓 REPL 클라이언트</title>
+<meta charset="utf-8">
+<script>
+var url = "ws://localhost:9999/repl";
+var ws = new WebSocket(url);
+ws.onmessage = function(e) {
+    console.log("명령: ", e.data);
+    try {
+        var result = eval(e.data);
+        ws.send(result.toString());
+    } catch (err) {
+        ws.send(err.toString());
+    }
+}
+</script>

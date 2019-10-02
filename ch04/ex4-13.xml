@@ -1,0 +1,7 @@
+<!-- 코드 4-13 메시지 스탼자를 서버로 전송 -->
+
+<message type="chat" to="desktopuser@localhost">
+<body>
+    난 채팅이 좋아. 그리고 꺾쇠 괄호도 좋아해.
+</body>
+</message>

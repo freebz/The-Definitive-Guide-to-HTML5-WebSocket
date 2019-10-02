@@ -1,0 +1,6 @@
+<!-- 코드 4-15 XMPP 서버 핑 -->
+
+<iq type="get" id="86-14" from="localhost"
+    to="websocketuser@localhost/cc9fd219" >
+    <ping xmlns="urn:xmpp:ping"/>
+</iq>

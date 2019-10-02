@@ -1,0 +1,22 @@
+<!-- 코드 4-2 chat.html -->
+
+<!DOCTYPE html>
+<title>XMPP를 이용한 웹소켓 채팅</title>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="chat.css">
+<h1>XMPP를 이용한 웹소켓 채팅</h1>
+
+<!-- 연결 -->
+<div class="panel">
+    <input type="text" id="username" placeholder="사용자명">
+    <input type="password" id="password" placeholder="암호">
+    <button id="connectButton">연결</button>
+</div>
+
+<div id="presenceArea" class="panel"></div>
+<div id="chatArea" class="panel"></div>
+<div id="output"></div>
+
+<!-- 스크립트 -->
+<script src="strophe.js"></script>
+<script src="chat_app.js"></script>

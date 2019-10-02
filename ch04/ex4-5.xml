@@ -1,0 +1,6 @@
+<!-- 코드 4-5 접속 여부 스탠자 예제 -->
+
+<presence>
+<show>chat</show>
+    <status>웹소켓과 함께 즐거운 시간 보내는 중</status>
+</presence>

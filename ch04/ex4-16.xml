@@ -1,0 +1,4 @@
+<!-- 코드 4-16 클라이언트의 응답 형식 -->
+
+<iq type="result" id="86-14" to="localhost"
+    from="websocketuser@localhost/cc9fd219" />

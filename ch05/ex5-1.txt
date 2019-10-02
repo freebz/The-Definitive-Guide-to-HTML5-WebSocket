@@ -1,0 +1,9 @@
+코드 5-1 NULL로 종료된 SEND 프레임
+
+SEND
+
+destination: /topic/hello/world
+content-type: text/plain
+
+hello, world!
+

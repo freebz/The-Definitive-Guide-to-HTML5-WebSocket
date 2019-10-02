@@ -1,0 +1,11 @@
+<!-- 코드 5-4 activemq.xml의 웹소켓 커넥터 설정 부분 -->
+
+<!-- 전송 커넥터는 클라이언트와 다른 브로커에 주어진 프로토콜에
+     ActiveMQ를 노출시킨다. 자세한 설명은 다음을 참고하자.
+     http://activemq.apache.org/configuring-transports.html -->
+<transportConnectors>
+    <transportConnector name="openwire" uri="tcp://0.0.0.0:61616"/>
+</transportConnectors>
+<transportConnectors>
+    <transportConnector name="websocket" uri="ws://0.0.0.061614"/>
+</transportConnectors>

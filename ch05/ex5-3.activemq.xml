@@ -1,0 +1,5 @@
+<!-- 코드 5-3 웹소켓 커넥터 선언하기 -->
+
+<transportConnectors>
+    <transportConnector name="websocket" uri="ws://0.0.0.061614"/>
+</transportConnectors>

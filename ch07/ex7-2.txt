@@ -1,0 +1,9 @@
+코드 7-2 응답하고 웹소켓 핸드셰이크를 마무리하는 사버
+
+Response
+101Switching Protocols
+Connection:Upgrade
+Date: Wed, 20 Jun 2012 03:39:49 GMT
+Sec-WebSocket-Accept: fYoqiH14DgI+5ylEMmM2sOLzOi0=
+Server: KaazingGateway
+Upgrade:WebSocket

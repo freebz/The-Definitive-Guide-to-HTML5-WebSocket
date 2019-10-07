@@ -1,0 +1,18 @@
+<!-- 코드 7-5 메시지 브로커 목적지로의 의도적 접근을 제한 -->
+
+<authorizationPlugin>
+  <map>
+    <authorizationMap>
+      <authorizationEntries>
+	<authorizationEntry queue=">" read="admins" write="admins" admin="admins" />
+	<authorizationEntry queue="USERS.>" read="users" write="users" admin="users" />
+	<authorizationEntry queue="GUEST.>" read="guests" write="guests,users" admin="guests,users" />
+	<authorizationEntry queue="TEST.Q" read="guests" write="guests" />
+	<authorizationEntry topic=">" read="admins" write="admins" admin="admins" />
+	<authorizationEntry topic="USERS.>" read="users" write="users" admin="users" />
+	<authorizationEntry topic="GUEST.>" read="guests" write="guests,users" admin="guests,users" />
+	<authorizationEntry topic="ActiveMQ.advisory.>" read="guests,users" write="guests,users" admin="guests,users" />
+      </authorizationEntries>
+    </authorizationMap>
+  </map>
+</authorizationPlugin>

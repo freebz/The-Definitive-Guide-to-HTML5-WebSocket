@@ -1,0 +1,3 @@
+<!-- 코드 7-4 guest 사용자용 암호와 그룹 설정하기 -->
+
+<authenticationUser username="guest" password="${guest.password}" groups="guests"/>

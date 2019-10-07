@@ -1,0 +1,9 @@
+코드 7-1 웹소켓 핸드셰이크를 개시하는 클라이언트
+
+Request
+GET/echo HTTP/1.1
+Host: echo.websocket.org
+Origin:http://www.websocket.org
+Sec-WebSocket-Key:7+C600xYyb0v2zmJ69RQsw==
+Sec-WebSocket-Version: 13
+Upgrade:websocket

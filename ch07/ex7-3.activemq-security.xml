@@ -1,0 +1,17 @@
+<!-- 코드 7-3 Apache ActiveMQ 설정 예제 -->
+
+<plugins>
+  <simpleAuthenticationPlugin>
+    <users>
+      <authenticationUser username="system"
+			  password="${activemq.password}"
+			  groups="users,admins"/>
+      <authenticationUser username="user"
+			  password="${guest.password}"
+			  groups="users"/>
+      <authenticationUser username="guest"
+			  password="${guest.password}"
+			  groups="guests"/>
+    </users>
+  </simpleAuthenticationPlugin>
+</plugins>

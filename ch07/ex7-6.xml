@@ -1,0 +1,3 @@
+<!-- 코드 7-6 ActiveMQ 설정 파일에 지정한 권한 부여 정책 -->
+
+<authorizationEntry queue="GUEST.>" read="guests" write="guests,users" admin="guests,users" />

@@ -1,0 +1,30 @@
+코드 A-1 웹소켓 핸드셰이크
+
+Request URL:ws://echo.websocket.org/?encoding=text
+Request Method:GET
+Status Code:101 Web Socket Protocol Handshake
+Request Headers
+Connection:Upgrade
+Cookie: __utma=9925811.531111867.1341699920.1353720500.135372
+5565.33; __utmb=9925811.4.10.1353725565; __utmc=9925811; __
+utmz=9925811.1353725565.33.30.utmcsr=websocket.org|utmccn=(referral)|
+utmcmd=referal|utmcct=/
+Host:echo.websocket.org
+Origin:http://www.websocket.org
+Sec-WebSocket-Extensions:x-webkit-deflate-frame
+Sec-WebSocket-Key:JfyxfhR8QIm3BSb0q/Tw5w==
+Sec-WebSocket-Version:13
+Upgrade:websocket
+(Key3):00:00:00:00:00:00:00:00
+Query String: Parameters
+encoding:text
+Response Headers
+Access-Control-Aloow-Credentials:true
+Access-Control-Allow-Headers:content-type
+Access-Control-Allow-Origin:http://www.websocket.org
+Connection:Upgrade
+Date: Sat, 24 Nov 2012 03:08:27 GMT
+Sec-WebSocket-Accept:Yr3WGnQMtPOktDVP1aBU3l5DfFI=
+Server:Kaazing Gateway
+Upgrade:WebSocket
+(Challenge Response):00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00

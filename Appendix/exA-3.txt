@@ -1,0 +1,18 @@
+코드 A-3 웹소켓 핸드셰이크의 네트워크 내부 구성
+
+830: SOCKET
+ws://echo.websocket.org/?encoding=text
+Start Time: 2012-11-23 20:08:27.489
+
+t=1353730107489 [st= 0]         +SOCKET_ALIVE [dt=?]
+                                -> source_dependency = 828 (SOCKET_STREAM)
+t=1353730107489 [st= 0]         +TCP_CONNECT [dt=91]
+                                -> address_list = ["174.129.224.73:80"]
+t=1353730107489 [st= 0]         +TCP_CONNECT [dt=91]
+                                -> ADDRESS = "174.129.224.73:80"
+t=1353730107580 [st= 91]        -TCP_CONNECT
+                                -> source_address = "10.0.1.5:57878"
+t=1353730107582 [st= 93]        SOCKET_BYTES_SENT
+                                -> byte_count = 470
+t=1353730107677 [st=188]        SOCKET_BYTES_RECEIVED
+                                -> byte_count = 542
